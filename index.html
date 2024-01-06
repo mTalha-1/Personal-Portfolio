@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61193ac7f9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815</span>
+    </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm Muhammad <span>Talha</span></h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/talha__.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>In today's data-driven landscape, I'm enthusiastic about harnessing the power of data as a skilled data analyst. With strong analytical abilities, technical proficiency in tools like Python and Power BI, and a knack for data storytelling, I excel at extracting valuable insights and translating them into actionable. My commitment lies in not just crunching numbers but in crafting data-driven narratives that empower informed decision-making.</p>
+
+                    <div class = "tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiennce')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analysis Tools</span><br>
+                                <ul>
+                                    <li>Microsoft PowerBI, Microsoft Excel, Google Sheets, SQL</li>
+                                    <li>Python, Numpy, Pandas, Matplotlib, Seaborn, Jupyter Notebook, Google Colab</li>
+                                </ul>
+                            </li>
+                            <li><span>Data Analysis Techniques</span><br>
+                                <ul>
+                                    <li>Data Cleaning, Data Transformation, Data Modeling, Exploratory Data Analysis (EDA)</li>
+                                    <li>Data Visualization, Reporting, Dashboard Creation</li>
+                                </ul>
+                            </li>
+                            <li><span>Interpersonal</span><br>
+                                <ul>
+                                    <li>Data storytelling</li>
+                                    <li>Communication</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiennce">
+                        <ul>
+                            <li><span>Oct 2023 - Present | Meesh Consulting Ltd · Contract</span><br>Power BI Developer</li>
+                            <li><span>Aug 2023 - Present | Upwork</span><br>Freelancing<br>𝐓𝐡𝐞 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐈 𝐨𝐟𝐟𝐞𝐫 𝐢𝐧𝐜𝐥𝐮𝐝𝐞: <br>
+                                ➽➽ Data Analysis and Web Scraping <br>
+                                ➽➽ Desing Interactive Power BI Dashboards and Reports <br>
+                                ➽➽ Extract Vital Insights from Data to Help Grow Businesses
+                                </li>
+                            <li><span>Jun 2023 - Aug 2023 | Codeaza Technologies</span><br>Python Developer Internship <br>I worked with web scraping and automation team in a data extraction and automation projects by 20% efficiency increment.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Oct 2021 - Present | Superior Univeristy, Lahore, Pakistan</span><br>Bachelor of Science - Computer Science</li>
+                            <li><span>Apr 2019 - Oct 2021  | Government College of Science, Lahore, Pakistan</span><br>Fsc (Pre-Engineering)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Analysis</h2>
+                    <p>I specialize in empowering informed decision-making through meticulous data analysis. I leverages cutting-edge analytical tools and methodologies to extract actionable insights from complex datasets. Whether it's market trends, customer behavior, or operational metrics, we transform raw data into meaningful information that drives strategic business outcomes. Uncover hidden patterns, trends, and opportunities with our comprehensive data analysis services.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Dashboarding</h2>
+                    <p>Transforming intricate data into intuitive visualizations is at the core of what I do. My dashboard creation services offer dynamic and user-friendly interfaces that distill complex information into easily understandable graphs, charts, and reports. I tailor dashboards to your specific needs, enabling you to effortlessly track key performance indicators, monitor real-time metrics, and make data-driven decisions. Experience the power of accessible and visually compelling data representations with our bespoke dashboard solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-scroll"></i>
+                    <h2>Web Scraping</h2>
+                    <p>Unlock the potential of web data with my meticulous web scraping services. I employs advanced scraping techniques to gather structured and relevant information from diverse online sources. Whether it's competitor analysis, market research, or collecting data for your business needs, our web scraping expertise ensures accurate and timely extraction of data. Gain a competitive edge by harnessing the wealth of data available on the web, customized to suit your unique requirements, with my professional web scraping solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Revenue Insights - Hospitality Domain</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium necessitatibus, hic ipsum molestiae ipsa.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Revenue Insights - Hospitality Domain</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium necessitatibus, hic ipsum molestiae ipsa.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Revenue Insights - Hospitality Domain</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium necessitatibus, hic ipsum molestiae ipsa.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mtalhaasiifshazad@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +92 316 4669546</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/muhammadtalha0a1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mTalha-1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:mtalhaasifshazad@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzuZHKDlEdaDE38PVMmhYQHizRqrwRfGW6ChjOf8tlwZcEWnfp67NlRyZytzQO6SaDUw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
